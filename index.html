@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Ropa</title>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Nombre de tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Tienda online</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="navbar-nav ml-auto">
+                <div class="nav-item" id="cart-icon-container">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-item-count">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+
+        <div class="col-md-4 product-container"> 
+            <div class="product" id="product1">
+                <img src="imagen1.png" alt="Producto 1" class="product-image" id="product1-image">
+                <h3>Producto 1</h3>
+                <p class="price">$50.00</p>
+                <button class="btn btn-primary add-to-cart" onclick="addToCart('product1')">Agregar al carrito</button>
+            </div>
+        </div>
+        
+
+        <div class="col-md-4 product-container"> 
+            <div class="product" id="product2">
+                <img src="imagen2.png" alt="Producto 2" class="product-image" id="product2-image">
+                <h3>Producto 2</h3>
+                <p class="price">$50.00</p>
+                <button class="btn btn-primary add-to-cart" onclick="addToCart('product2')">Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="col-md-4 product-container"> 
+            <div class="product" id="product3">
+                <img src="imagen3.png" alt="Producto 3" class="product-image" id="product3-image">
+                <h3>Producto 3</h3>
+                <p class="price">$50.00</p>
+                <button class="btn btn-primary add-to-cart" onclick="addToCart('product3')">Agregar al carrito</button>
+            </div>
+        </div>
+    
+    </div>
+    
+        <footer class="footer bg-dark text-light text-center">
+            Derechos Reservados &copy; 2024 Tu Tienda de Ropa
+        </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javascript.js"></script> 
+</body>
+</html>
